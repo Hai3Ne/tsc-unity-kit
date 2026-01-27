@@ -22,14 +22,14 @@ The **TSC Unity Kit** is a standardized development framework designed for rapid
 2. **Open Project:** Launch **Unity 6 Hub** and add the cloned folder.
 3. **Initialize Agent:**
    - Verify `.claude/config.json` exists.
-   - Run command `$Init` to sync the AI Architect.
+   - Run command `$init` to sync the AI Architect.
 
 ## Quick Start (AI Agent)
 This project is optimized for AI-assisted development.
 1. **Initialize:** `tsc-unity-kit` skill loaded.
 2. **Command:** Use `CLAUDE.md` for shortcuts.
-   - `$Code`: Generate standard MonoBehaviours.
-   - `$Check`: Validate against `.tsc_workspace/rules/coding-standard.md`.
+   - `$code`: Generate standard MonoBehaviours.
+   - `$check`: Validate against `.tsc_workspace/rules/coding-standard.md`.
 
 ## Coding Standards
 Adherence to `coding-standard.md` is **mandatory**.

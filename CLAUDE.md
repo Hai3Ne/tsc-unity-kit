@@ -1,17 +1,17 @@
 # TSC Command Palette
 
 ## Core Commands
-- **$Init**:  Initialize session. Reads `active.md`, `coding-standard.md`, and `docs/`.
-- **$Code**:  Generate a new MonoBehaviour. *Usage: $Code [FeatureName]*
-- **$UI**:    Generate a UI Controller. *Usage: $UI [PanelName]*
-- **$Fix**:   Analyze and repair selected code. *Usage: $Fix*
-- **$Check**: Verify code against "Iron Rules". *Usage: $Check*
+- **$init**:  Initialize session. Reads `active.md`, `coding-standard.md`, and `docs/`.
+- **$code**:  Generate a new MonoBehaviour. *Usage: $code [FeatureName]*
+- **$ui**:    Generate a UI Controller. *Usage: $ui [PanelName]*
+- **$fix**:   Analyze and repair selected code. *Usage: $fix*
+- **$check**: Verify code against "Iron Rules". *Usage: $check*
 
 ## Navigation Commands
-- **$Plan**:  Read/Update current tasks (`plans/active.md`).
-- **$Docs**:  Read project context (`docs/`).
-- **$Rules**: Review coding standards (`rules/coding-standard.md`).
-- **$Help**:  Show this command menu.
+- **$plan**:  Read/Update current tasks (`plans/active.md`).
+- **$docs**:  Read project context (`docs/`).
+- **$rules**: Review coding standards (`rules/coding-standard.md`).
+- **$help**:  Show this command menu.
 
 ## Context Shortcuts
 - **Workspace**: `.tsc_workspace/`
