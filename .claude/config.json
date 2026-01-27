@@ -1,0 +1,9 @@
+{
+  "skills": [
+    {
+      "name": "tsc-unity-kit",
+      "description": "Two Sleepy Cats standard Unity development kit.",
+      "path": "skills/tsc-unity-kit"
+    }
+  ]
+}
