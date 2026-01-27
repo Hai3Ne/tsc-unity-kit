@@ -1,6 +1,6 @@
 # TSC Unity Kit
 
-**Two Sleepy Cats Studio** | *Lazy but Smart*
+**Two Sleepy Cats Studio**
 
 ![Unity 6](https://img.shields.io/badge/Unity-6_LTS-000000?style=for-the-badge&logo=unity)
 ![Claude Code](https://img.shields.io/badge/Claude_Code-CLI-d97757?style=for-the-badge&logo=anthropic)
