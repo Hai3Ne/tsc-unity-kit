@@ -1,0 +1,6 @@
+# TSC Workspace (Agent Logic)
+.tsc_workspace/logs/
+*.log
+
+# Keep .claude/ config and skills!
+# (Do not ignore .claude unless local secrets are stored there)

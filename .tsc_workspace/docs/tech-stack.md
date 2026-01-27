@@ -1,14 +1,15 @@
 # Technology Stack
 
 ## Core Engine
-- **Engine:** Unity 6 (LTS)
-- **Scripting:** C# 12 / .NET 8
+- **Unity Version:** Unity 6 (LTS)
+- **Scripting Backend:** IL2CPP (Release), Mono (Editor)
+- **API Compatibility:** .NET Standard 2.1
 
-## Frameworks & Libraries
-- **Async:** `Awaitable` (Native Unity 6) or `UniTask`.
-- **UI:** Unity UI Toolkit (Primary) / DoTween (Animation).
-- **Architecture:** MVVM / Service Locator.
+## Programming (C#)
+- **Async Pattern:** `Awaitable` (Unity 6 Native)
+- **DI Pattern:** None (Manual Injection via SerializeField)
+- **UI Framework:** UIToolkit (preferred) or uGUI (legacy)
 
-## Tools
-- **Version Control:** Git
-- **AI Assistant:** TSC Unity Architect (Claude)
+## Libraries
+- **Tweening:** DoTween (Optional)
+- **Networking:** Unity Transport (if needed)

@@ -2,8 +2,33 @@
   "skills": [
     {
       "name": "tsc-unity-kit",
-      "description": "Two Sleepy Cats standard Unity development kit.",
+      "description": "Core Orchestrator. Manages initialization ($init) and delegates tasks to sub-skills.",
       "path": "skills/tsc-unity-kit"
+    },
+    {
+      "name": "tsc-audit",
+      "description": "Code Audit Module. Provides checklists and logic for verifying code compliance ($check).",
+      "path": "skills/tsc-audit"
+    },
+    {
+      "name": "tsc-examples",
+      "description": "Reference Examples. Contains canonical Unity 6 patterns for generation ($code).",
+      "path": "skills/tsc-examples"
+    },
+    {
+      "name": "tsc-automation",
+      "description": "Automation Scripts. Bridges AI commands to local scripts in .tsc_workspace/agents/.",
+      "path": "skills/tsc-automation"
+    },
+    {
+      "name": "tsc-docs",
+      "description": "Documentation Access. Maps natural language queries to .tsc_workspace/docs/ ($docs).",
+      "path": "skills/tsc-docs"
+    },
+    {
+      "name": "tsc-templates",
+      "description": "Asset Templates. Points to reusable code templates in .tsc_workspace/templates/.",
+      "path": "skills/tsc-templates"
     }
   ]
 }
