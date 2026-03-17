@@ -11,6 +11,7 @@
 - **$plan**:  Read/Update current tasks (`plans/active.md`).
 - **$docs**:  Read project context (`docs/`).
 - **$rules**: Review coding standards (`rules/coding-standard.md`).
+- **$promote**: Generate devlog/tweet from progress.
 - **$help**:  Show this command menu.
 
 ## Context Shortcuts

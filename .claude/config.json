@@ -29,6 +29,11 @@
       "name": "tsc-templates",
       "description": "Asset Templates. Points to reusable code templates in .tsc_workspace/templates/.",
       "path": "skills/tsc-templates"
+    },
+    {
+      "name": "tsc-marketing",
+      "description": "Marketing Assistant. Helps solo devs generate social content ($promote).",
+      "path": "skills/tsc-marketing"
     }
   ]
 }
