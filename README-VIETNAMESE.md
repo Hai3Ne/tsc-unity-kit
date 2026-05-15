@@ -14,9 +14,10 @@ Kit hiện hỗ trợ hai môi trường chính:
 - **Codex** thông qua `AGENTS.md` và `.agents/skills/`
 
 ## Cài đặt ban đầu
-1. Clone repository về máy và đặt tại project hiện tại, sau đó mở project Unity 2022 trở lên.
-2. Mở Claude hoặc Codex tại thư mục gốc của project.
-3. Chạy lệnh `$init` để nạp ngữ cảnh cốt lõi.
+1. Clone repository về máy.
+2. Mở project bằng Unity 6 Hub.
+3. Mở Claude hoặc Codex tại thư mục gốc của project.
+4. Chạy lệnh `$init` để nạp ngữ cảnh dùng chung.
 
 Khi `$init` chạy đúng, agent sẽ nạp:
 - `.tsc_workspace/plans/active.md`
@@ -52,7 +53,7 @@ Nó quy định agent nên:
 ## Các lệnh chính
 
 ### `$init`
-Khởi tạo phiên làm việc và nạp ngữ cảnh cốt lõi.
+Khởi tạo phiên làm việc và nạp ngữ cảnh dùng chung.
 
 ### `$code [FeatureName]`
 Sinh MonoBehaviour mới theo phong cách TSC.
@@ -99,7 +100,9 @@ Hỗ trợ viết devlog hoặc nội dung mạng xã hội dựa trên tiến �
 
 ```text
 .tsc_workspace/
-  docs/        tài liệu kỹ thuật, review, decision log
+  docs/
+    game-design/   tài liệu thiết kế game
+    development/   tài liệu kỹ thuật và sản xuất
   plans/       kế hoạch đang hoạt động
   rules/       coding standard, agent principles, definition of done
   templates/   nơi để mở rộng template về sau
@@ -146,6 +149,8 @@ Hai module đang ươm vẫn được giữ lại cho hướng phát triển sau
 - `.tsc_workspace/rules/coding-standard.md`
 - `.tsc_workspace/rules/agent-principles.md`
 - `.tsc_workspace/rules/definition-of-done.md`
+- `.tsc_workspace/docs/game-design/`
+- `.tsc_workspace/docs/development/`
 - `.tsc_workspace/docs/TSC_KIT_REVIEW_V1.md`
 - `.tsc_workspace/docs/decision-log.md`
 

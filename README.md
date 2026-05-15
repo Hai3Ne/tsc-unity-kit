@@ -20,13 +20,14 @@ The kit currently supports two primary environments:
 - Simple, verifiable solutions that fit Unity 6
 
 ## Quick Start
-1. Clone the repository.
+1. Clone this repository.
 2. Open the project in Unity 6 Hub.
-3. Run `$init` in your AI environment to load the shared core context.
+3. Run `$init` in your AI environment to load the shared project context.
 
 ## Main Structure
 - `.tsc_workspace/rules/`: coding standards and working principles
-- `.tsc_workspace/docs/`: technical docs, reviews, and decisions
+- `.tsc_workspace/docs/game-design/`: game design documents
+- `.tsc_workspace/docs/development/`: engineering and production documents
 - `.shared/skills/`: shared skill sources
 - `.claude/skills/`: Claude adapters
 - `.agents/skills/`: Codex adapters
@@ -45,6 +46,8 @@ The kit currently supports two primary environments:
 - `.tsc_workspace/rules/coding-standard.md`
 - `.tsc_workspace/rules/agent-principles.md`
 - `.tsc_workspace/rules/definition-of-done.md`
+- `.tsc_workspace/docs/game-design/`
+- `.tsc_workspace/docs/development/`
 
 ## License
 This project is licensed under the MIT License. See `LICENSE` for details.

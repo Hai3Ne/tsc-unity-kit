@@ -37,3 +37,17 @@ Duplicating the full skill set increases drift risk and maintenance cost.
 ### Consequences
 - Canonical content lives under `.shared/skills/`.
 - Skills in `.claude/skills/` and `.agents/skills/` should point back to shared sources whenever practical.
+
+## 2026-05-15 - Split Workspace Docs into Design and Development
+
+### Decision
+TSC Unity Kit uses two primary documentation branches under `.tsc_workspace/docs/`:
+- `game-design/`
+- `development/`
+
+### Rationale
+Game design documents and engineering documents serve different audiences and evolve at different speeds. Keeping them separate makes the workspace easier to navigate and scale.
+
+### Consequences
+- Player-facing design material belongs under `game-design/`.
+- Technical architecture, implementation notes, QA, pipelines, and release notes belong under `development/`.

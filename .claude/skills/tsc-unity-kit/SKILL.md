@@ -11,7 +11,7 @@ description: Core orchestrator for Two Sleepy Cats Studio. Initializes shared co
 - When a general request needs routing to the appropriate skill
 
 ## Initialization
-When `$init` runs, load only this shared core:
+When `$init` runs, load only:
 1. `.tsc_workspace/plans/active.md`
 2. `.tsc_workspace/rules/coding-standard.md`
 3. `.tsc_workspace/rules/agent-principles.md`
