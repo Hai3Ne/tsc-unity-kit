@@ -9,7 +9,7 @@ Before implementing non-trivial work:
 2. Identify the smallest viable solution.
 3. Define what successful completion looks like.
 4. Implement only the required change.
-5. Verify the result against project rules.
+5. Verify the result against project rules and `.tsc_workspace/rules/definition-of-done.md`.
 
 ## TSC Agent Principles
 Always follow `.tsc_workspace/rules/agent-principles.md`.
@@ -28,7 +28,7 @@ When instructions overlap, use this order:
 4. Command-specific skill guidance
 
 ## Core Commands
-- **$init**: Initialize session. Read `plans/active.md`, `rules/coding-standard.md`, `rules/agent-principles.md`, and relevant docs.
+- **$init**: Initialize session. Read `plans/active.md`, `rules/coding-standard.md`, `rules/agent-principles.md`, `rules/definition-of-done.md`, and relevant docs.
 - **$code**: Generate a new MonoBehaviour. *Usage: $code [FeatureName]*
 - **$ui**: Generate a UI Controller. *Usage: $ui [PanelName]*
 - **$fix**: Analyze, repair, and verify selected code. *Usage: $fix*
@@ -50,6 +50,8 @@ When instructions overlap, use this order:
 - Use `tsc-docs` for project context.
 - Use `tsc-examples` for Unity code generation patterns.
 - Use `tsc-audit` for reviews and `$check`.
-- Use `tsc-templates` for reusable scaffolds.
-- Use `tsc-automation` for local scripts and validation workflows.
 - Use `tsc-marketing` for `$promote`.
+
+## Planned Modules
+- `tsc-templates`
+- `tsc-automation`

@@ -5,9 +5,9 @@ description: Automation Script Skill. Bridges AI commands to local scripts ($bui
 
 # TSC Automation Skill
 
-## When to use this skill
-- **Execution:** When user runs automation commands (e.g., `$build`).
-- **Scripts:** Accesses `.tsc_workspace/agents/`.
+## Status
+Planned module.
 
-## Capability
-(Placeholder for future Python/Bash script integration).
+## Adapter Rule
+Use the shared source of truth:
+- `.shared/skills/automation/SKILL.md`

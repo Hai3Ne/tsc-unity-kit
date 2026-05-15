@@ -17,7 +17,7 @@
     },
     {
       "name": "tsc-automation",
-      "description": "Automation Scripts. Bridges AI commands to local scripts in .tsc_workspace/agents/.",
+      "description": "Planned module for future automation scripts and validation workflows.",
       "path": "skills/tsc-automation"
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "name": "tsc-templates",
-      "description": "Asset Templates. Points to reusable code templates in .tsc_workspace/templates/.",
+      "description": "Planned module for future reusable template workflows.",
       "path": "skills/tsc-templates"
     },
     {

@@ -5,9 +5,9 @@ description: Asset Template Skill. Points to reusable code templates ($template)
 
 # TSC Templates Skill
 
-## When to use this skill
-- **Scaffold:** When user runs `$code` (subsidiary check).
-- **Templates:** Accesses `.tsc_workspace/templates/`.
+## Status
+Planned module.
 
-## Capability
-(Placeholder for future .txt template integration).
+## Adapter Rule
+Use the shared source of truth:
+- `.shared/skills/templates/SKILL.md`

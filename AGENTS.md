@@ -14,7 +14,7 @@ Follow `.tsc_workspace/rules/agent-principles.md` while working in this reposito
 4. Command-specific skill guidance
 
 ## Core Commands
-- **$init**: Initialize session. Read `plans/active.md`, `rules/coding-standard.md`, `rules/agent-principles.md`, and relevant docs.
+- **$init**: Initialize session. Read `plans/active.md`, `rules/coding-standard.md`, `rules/agent-principles.md`, `rules/definition-of-done.md`, and relevant docs.
 - **$code**: Generate a new MonoBehaviour. *Usage: $code [FeatureName]*
 - **$ui**: Generate a UI Controller. *Usage: $ui [PanelName]*
 - **$fix**: Analyze, repair, and verify selected code. *Usage: $fix*
@@ -31,3 +31,7 @@ Follow `.tsc_workspace/rules/agent-principles.md` while working in this reposito
 - **Workspace**: `.tsc_workspace/`
 - **Rules**: `.tsc_workspace/rules/`
 - **Templates**: `.tsc_workspace/templates/`
+
+## Planned Modules
+- `tsc-templates`
+- `tsc-automation`

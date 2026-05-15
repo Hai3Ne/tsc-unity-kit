@@ -5,7 +5,7 @@
 - [ ] **Properties**: Public access must use C# Properties (`=>`).
 
 ## 2. Unity 6 Architecture
-- [ ] **Async/Await**: Uses `Awaitable` or `UniTask`. NO `IEnumerator` / `Coroutine`.
+- [ ] **Async/Await**: Uses `Awaitable`. NO `IEnumerator` / `Coroutine`.
 - [ ] **Component Caching**: `GetComponent` is called in `Awake/Start`, NEVER in `Update`.
 - [ ] **Safety**: Uses `TryGetComponent` where dependencies are not guaranteed.
 
@@ -15,5 +15,10 @@
 - [ ] **Loops**: No LINQ in `Update`.
 
 ## 4. Structure & Naming
-- [ ] **Regions**: Follows `Config -> References -> State -> Lifecycle -> API`.
+- [ ] **Regions**: Follows `Config -> References -> State -> Lifecycle -> API -> Internal`.
 - [ ] **Naming**: `_camelCase` for private, `PascalCase` for public.
+
+## 5. Agent Quality
+- [ ] **Scope**: The change stays within the requested outcome.
+- [ ] **Simplicity**: No unnecessary abstractions or premature extension points were added.
+- [ ] **Verification**: The result has a clear success check or supporting evidence.

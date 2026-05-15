@@ -9,7 +9,6 @@ description: Documentation Access Skill. Maps natural language queries to .tsc_w
 - **Query:** When user runs `$docs [Topic]`.
 - **Search:** When asking about game design (GDD) or tech choices.
 
-## How to Search ($docs)
-1.  **Target:** Search `.tsc_workspace/docs/` recursively.
-2.  **Match:** Find file matching the topic (e.g., `GDD.md`).
-3.  **Read:** Return content of that file only.
+## Adapter Rule
+Use the shared source of truth:
+- `.shared/skills/docs/SKILL.md`

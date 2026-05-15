@@ -3,74 +3,50 @@
 **Two Sleepy Cats Studio**
 
 ![Unity 6](https://img.shields.io/badge/Unity-6_LTS-000000?style=for-the-badge&logo=unity)
-![Claude Code](https://img.shields.io/badge/Claude_Code-CLI-d97757?style=for-the-badge&logo=anthropic)
-![Antigravity](https://img.shields.io/badge/Antigravity-Agent-4285F4?style=for-the-badge&logo=google)
+![Claude Code](https://img.shields.io/badge/Claude_Code-supported-d97757?style=for-the-badge&logo=anthropic)
+![Codex](https://img.shields.io/badge/Codex-supported-111111?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-## Overview
-The **TSC Unity Kit** is a standardized development framework designed for rapid, stable, and clean game development. It leverages AI Agents to automate repetitive tasks while enforcing strict architectural patterns.
+## Tổng quan
+**TSC Unity Kit** là bộ khung phát triển Unity 6 dành cho quy trình solo development có AI hỗ trợ. Mục tiêu của kit là giúp dự án đi nhanh nhưng vẫn giữ được code sạch, kiến trúc rõ, và thói quen làm việc nhất quán.
 
----
+Kit hiện hỗ trợ hai môi trường chính:
+- **Claude** qua `CLAUDE.md` và `.claude/skills/`
+- **Codex** qua `AGENTS.md` và `.agents/skills/`
 
-## 🤖 AI Agent Setup
-This kit is built to be driven by AI. Choose your preferred environment:
+## Triết lý
+- Một lõi chung cho toàn bộ quy tắc và tri thức dự án
+- Nhiều adapter mỏng cho từng công cụ AI
+- Ưu tiên giải pháp đơn giản, kiểm chứng được, và phù hợp với Unity 6
 
-### Option A: Claude Code (CLI)
-*Recommended for command-line users.*
+## Khởi động nhanh
+1. Clone repository.
+2. Mở project bằng Unity 6 Hub.
+3. Chạy `$init` trong môi trường AI đang dùng để nạp ngữ cảnh lõi.
 
-1.  **Prerequisites:**
-    -   Node.js v20+ installed.
-2.  **Installation:**
-    ```bash
-    npm install -g @anthropic-ai/claude-code
-    ```
-3.  **Authentication:**
-    ```bash
-    claude login
-    ```
-4.  **Running:**
-    Navigate to the project root and run:
-    ```bash
-    claude
-    ```
-5.  **Verification:**
-    Type `$init` to verify the kit is loaded.
+## Cấu trúc chính
+- `.tsc_workspace/rules/`: chuẩn code và nguyên tắc làm việc
+- `.tsc_workspace/docs/`: tài liệu kỹ thuật, review, và quyết định
+- `.shared/skills/`: nguồn skill dùng chung
+- `.claude/skills/`: adapter cho Claude
+- `.agents/skills/`: adapter cho Codex
 
-### Option B: Antigravity (IDE Integration)
-*Recommended for Cursor/VSCode users.*
+## Lệnh chính
+- `$init`: khởi tạo phiên làm việc
+- `$code [Feature]`: sinh MonoBehaviour theo chuẩn TSC
+- `$ui [Panel]`: sinh UI Controller
+- `$fix`: phân tích, sửa, và xác minh lỗi
+- `$check`: audit code theo Iron Rules và chất lượng thay đổi
+- `$docs [Topic]`: đọc tài liệu dự án
 
-1.  **Configuration:**
-    -   Ensure `.claude/config.json` is present in the root.
-    -   Antigravity will automatically detect the **Skills** defined in config.
-2.  **Usage:**
-    -   Simply type natural language commands or use shortcuts defined in `CLAUDE.md`.
-3.  **Verification:**
-    -   Ask the agent: *"Run $init to check system status."*
+## Nguồn tham chiếu quan trọng
+- `CLAUDE.md`
+- `AGENTS.md`
+- `.tsc_workspace/rules/coding-standard.md`
+- `.tsc_workspace/rules/agent-principles.md`
+- `.tsc_workspace/rules/definition-of-done.md`
 
----
+## License
+Project này dùng giấy phép MIT. Xem `LICENSE` để biết chi tiết.
 
-## 🛠️ Quick Start
-1.  **Clone the Repository:**
-    ```bash
-    git clone https://github.com/Hai3Ne/tsc-unity-kit.git
-    ```
-2.  **Open Project:** Launch **Unity 6 Hub** and add the cloned folder.
-3.  **Initialize Agent:**
-    - Run command `$init` to sync the AI Architect context.
-
-
-## ⚡ Command Reference
-See `CLAUDE.md` for the full list.
-- `$code [Feature]`: Generate standard MonoBehaviour.
-- `$check`: Audit code against Iron Rules.
-- `$docs [Topic]`: Search documentation.
-
----
-
-## ⚖️ License
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
-For third-party software attribution, please see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-
----
-*© Two Sleepy Cats Studio. All rights reserved.*
+Thông tin attribution cho bên thứ ba nằm trong `THIRD_PARTY_NOTICES.md`.
