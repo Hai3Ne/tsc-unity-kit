@@ -1,39 +1,39 @@
 # Decision Log
 
-## 2026-05-15 - Tách code rules khỏi agent behavior
+## 2026-05-15 - Separate Code Rules from Agent Behavior
 
-### Quyết định
-TSC Unity Kit dùng hai lớp quy tắc riêng:
-- `coding-standard.md` cho cách viết code Unity
-- `agent-principles.md` cho cách AI agent suy nghĩ và thao tác
+### Decision
+TSC Unity Kit uses two distinct rule layers:
+- `coding-standard.md` for Unity code conventions
+- `agent-principles.md` for how AI agents should think and operate
 
-### Lý do
-Hai loại quy tắc này phục vụ hai mục đích khác nhau. Khi trộn chung, bộ kit dễ trở nên dài dòng và khó mở rộng.
+### Rationale
+These rule types serve different purposes. Mixing them makes the kit longer, less precise, and harder to evolve.
 
-### Hệ quả
-- Các entry point như `CLAUDE.md` và `AGENTS.md` phải tham chiếu cả hai lớp.
-- Khi review bộ kit, cần kiểm tra cả chất lượng code lẫn chất lượng hành vi của agent.
+### Consequences
+- Entry points such as `CLAUDE.md` and `AGENTS.md` must reference both layers.
+- Reviews of the kit should consider both code quality and agent behavior quality.
 
-## 2026-05-15 - `Awaitable` là chuẩn async chính thức
+## 2026-05-15 - `Awaitable` Is the Official Async Standard
 
-### Quyết định
-TSC Unity Kit dùng `Awaitable` làm chuẩn async chính thức cho Unity 6.
+### Decision
+TSC Unity Kit uses `Awaitable` as the official async standard for Unity 6.
 
-### Lý do
-Đây là hướng native của Unity 6 và giúp giữ một tiêu chuẩn rõ ràng trong toàn bộ kit.
+### Rationale
+It is the native Unity 6 direction and keeps the kit aligned around one clear async convention.
 
-### Hệ quả
-- Checklist audit không được tiếp tục cho phép `UniTask` như một lựa chọn ngang hàng.
-- Ví dụ code và tài liệu phải đồng bộ với quyết định này.
+### Consequences
+- Audit checklists must not continue to allow `UniTask` as an equal alternative.
+- Code examples and documentation must stay aligned with this decision.
 
-## 2026-05-15 - Một lõi chung, nhiều adapter
+## 2026-05-15 - One Shared Core, Multiple Adapters
 
-### Quyết định
-Claude và Codex cùng dùng một lõi tri thức chung; các folder theo nền tảng chỉ giữ adapter mỏng.
+### Decision
+Claude and Codex use the same shared knowledge core; platform folders keep only thin adapters.
 
-### Lý do
-Việc nhân đôi toàn bộ skill làm tăng nguy cơ drift và chi phí bảo trì.
+### Rationale
+Duplicating the full skill set increases drift risk and maintenance cost.
 
-### Hệ quả
-- Nội dung chuẩn được đưa về `.shared/skills/`.
-- Các skill trong `.claude/skills/` và `.agents/skills/` chỉ trỏ về nguồn dùng chung khi có thể.
+### Consequences
+- Canonical content lives under `.shared/skills/`.
+- Skills in `.claude/skills/` and `.agents/skills/` should point back to shared sources whenever practical.

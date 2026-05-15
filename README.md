@@ -7,39 +7,39 @@
 ![Codex](https://img.shields.io/badge/Codex-supported-111111?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-## Tổng quan
-**TSC Unity Kit** là bộ khung phát triển Unity 6 dành cho quy trình solo development có AI hỗ trợ. Mục tiêu của kit là giúp dự án đi nhanh nhưng vẫn giữ được code sạch, kiến trúc rõ, và thói quen làm việc nhất quán.
+## Overview
+**TSC Unity Kit** is a Unity 6 development framework for AI-assisted solo development. Its goal is to help projects move quickly while preserving clean code, clear architecture, and consistent working habits.
 
-Kit hiện hỗ trợ hai môi trường chính:
-- **Claude** qua `CLAUDE.md` và `.claude/skills/`
-- **Codex** qua `AGENTS.md` và `.agents/skills/`
+The kit currently supports two primary environments:
+- **Claude** through `CLAUDE.md` and `.claude/skills/`
+- **Codex** through `AGENTS.md` and `.agents/skills/`
 
-## Triết lý
-- Một lõi chung cho toàn bộ quy tắc và tri thức dự án
-- Nhiều adapter mỏng cho từng công cụ AI
-- Ưu tiên giải pháp đơn giản, kiểm chứng được, và phù hợp với Unity 6
+## Philosophy
+- One shared core for project rules and knowledge
+- Thin adapters for each AI tool
+- Simple, verifiable solutions that fit Unity 6
 
-## Khởi động nhanh
-1. Clone repository.
-2. Mở project bằng Unity 6 Hub.
-3. Chạy `$init` trong môi trường AI đang dùng để nạp ngữ cảnh lõi.
+## Quick Start
+1. Clone the repository.
+2. Open the project in Unity 6 Hub.
+3. Run `$init` in your AI environment to load the shared core context.
 
-## Cấu trúc chính
-- `.tsc_workspace/rules/`: chuẩn code và nguyên tắc làm việc
-- `.tsc_workspace/docs/`: tài liệu kỹ thuật, review, và quyết định
-- `.shared/skills/`: nguồn skill dùng chung
-- `.claude/skills/`: adapter cho Claude
-- `.agents/skills/`: adapter cho Codex
+## Main Structure
+- `.tsc_workspace/rules/`: coding standards and working principles
+- `.tsc_workspace/docs/`: technical docs, reviews, and decisions
+- `.shared/skills/`: shared skill sources
+- `.claude/skills/`: Claude adapters
+- `.agents/skills/`: Codex adapters
 
-## Lệnh chính
-- `$init`: khởi tạo phiên làm việc
-- `$code [Feature]`: sinh MonoBehaviour theo chuẩn TSC
-- `$ui [Panel]`: sinh UI Controller
-- `$fix`: phân tích, sửa, và xác minh lỗi
-- `$check`: audit code theo Iron Rules và chất lượng thay đổi
-- `$docs [Topic]`: đọc tài liệu dự án
+## Core Commands
+- `$init`: initialize the working session
+- `$code [Feature]`: generate a TSC-style MonoBehaviour
+- `$ui [Panel]`: generate a UI Controller
+- `$fix`: analyze, repair, and verify a problem
+- `$check`: audit code against Iron Rules and change quality
+- `$docs [Topic]`: read project documentation
 
-## Nguồn tham chiếu quan trọng
+## Key References
 - `CLAUDE.md`
 - `AGENTS.md`
 - `.tsc_workspace/rules/coding-standard.md`
@@ -47,6 +47,6 @@ Kit hiện hỗ trợ hai môi trường chính:
 - `.tsc_workspace/rules/definition-of-done.md`
 
 ## License
-Project này dùng giấy phép MIT. Xem `LICENSE` để biết chi tiết.
+This project is licensed under the MIT License. See `LICENSE` for details.
 
-Thông tin attribution cho bên thứ ba nằm trong `THIRD_PARTY_NOTICES.md`.
+Third-party attribution is documented in `THIRD_PARTY_NOTICES.md`.
