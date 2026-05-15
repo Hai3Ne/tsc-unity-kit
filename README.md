@@ -3,74 +3,53 @@
 **Two Sleepy Cats Studio**
 
 ![Unity 6](https://img.shields.io/badge/Unity-6_LTS-000000?style=for-the-badge&logo=unity)
-![Claude Code](https://img.shields.io/badge/Claude_Code-CLI-d97757?style=for-the-badge&logo=anthropic)
-![Antigravity](https://img.shields.io/badge/Antigravity-Agent-4285F4?style=for-the-badge&logo=google)
+![Claude Code](https://img.shields.io/badge/Claude_Code-supported-d97757?style=for-the-badge&logo=anthropic)
+![Codex](https://img.shields.io/badge/Codex-supported-111111?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
 ## Overview
-The **TSC Unity Kit** is a standardized development framework designed for rapid, stable, and clean game development. It leverages AI Agents to automate repetitive tasks while enforcing strict architectural patterns.
+**TSC Unity Kit** is a Unity 6 development framework for AI-assisted solo development. Its goal is to help projects move quickly while preserving clean code, clear architecture, and consistent working habits.
 
----
+The kit currently supports two primary environments:
+- **Claude** through `CLAUDE.md` and `.claude/skills/`
+- **Codex** through `AGENTS.md` and `.agents/skills/`
 
-## 🤖 AI Agent Setup
-This kit is built to be driven by AI. Choose your preferred environment:
+## Philosophy
+- One shared core for project rules and knowledge
+- Thin adapters for each AI tool
+- Simple, verifiable solutions that fit Unity 6
 
-### Option A: Claude Code (CLI)
-*Recommended for command-line users.*
+## Quick Start
+1. Clone this repository.
+2. Open the project in Unity 6 Hub.
+3. Run `$init` in your AI environment to load the shared project context.
 
-1.  **Prerequisites:**
-    -   Node.js v20+ installed.
-2.  **Installation:**
-    ```bash
-    npm install -g @anthropic-ai/claude-code
-    ```
-3.  **Authentication:**
-    ```bash
-    claude login
-    ```
-4.  **Running:**
-    Navigate to the project root and run:
-    ```bash
-    claude
-    ```
-5.  **Verification:**
-    Type `$init` to verify the kit is loaded.
+## Main Structure
+- `.tsc_workspace/rules/`: coding standards and working principles
+- `.tsc_workspace/docs/game-design/`: game design documents
+- `.tsc_workspace/docs/development/`: engineering and production documents
+- `.shared/skills/`: shared skill sources
+- `.claude/skills/`: Claude adapters
+- `.agents/skills/`: Codex adapters
 
-### Option B: Antigravity (IDE Integration)
-*Recommended for Cursor/VSCode users.*
+## Core Commands
+- `$init`: initialize the working session
+- `$code [Feature]`: generate a TSC-style MonoBehaviour
+- `$ui [Panel]`: generate a UI Controller
+- `$fix`: analyze, repair, and verify a problem
+- `$check`: audit code against Iron Rules and change quality
+- `$docs [Topic]`: read project documentation
 
-1.  **Configuration:**
-    -   Ensure `.claude/config.json` is present in the root.
-    -   Antigravity will automatically detect the **Skills** defined in config.
-2.  **Usage:**
-    -   Simply type natural language commands or use shortcuts defined in `CLAUDE.md`.
-3.  **Verification:**
-    -   Ask the agent: *"Run $init to check system status."*
+## Key References
+- `CLAUDE.md`
+- `AGENTS.md`
+- `.tsc_workspace/rules/coding-standard.md`
+- `.tsc_workspace/rules/agent-principles.md`
+- `.tsc_workspace/rules/definition-of-done.md`
+- `.tsc_workspace/docs/game-design/`
+- `.tsc_workspace/docs/development/`
 
----
+## License
+This project is licensed under the MIT License. See `LICENSE` for details.
 
-## 🛠️ Quick Start
-1.  **Clone the Repository:**
-    ```bash
-    git clone https://github.com/Hai3Ne/tsc-unity-kit.git
-    ```
-2.  **Open Project:** Launch **Unity 6 Hub** and add the cloned folder.
-3.  **Initialize Agent:**
-    - Run command `$init` to sync the AI Architect context.
-
-
-## ⚡ Command Reference
-See `CLAUDE.md` for the full list.
-- `$code [Feature]`: Generate standard MonoBehaviour.
-- `$check`: Audit code against Iron Rules.
-- `$docs [Topic]`: Search documentation.
-
----
-
-## ⚖️ License
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
-For third-party software attribution, please see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-
----
-*© Two Sleepy Cats Studio. All rights reserved.*
+Third-party attribution is documented in `THIRD_PARTY_NOTICES.md`.

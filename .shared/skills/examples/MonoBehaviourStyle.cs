@@ -1,54 +1,49 @@
 using UnityEngine;
-using System;
 
 namespace TwoSleepyCats.Game.Examples
 {
-    // [Reference: Agentskills.io Example]
-    // This file demonstrates the "Iron Rules" of TSC Unity Kit.
+    // Canonical TSC example for a simple Unity 6 MonoBehaviour.
     [RequireComponent(typeof(Rigidbody))]
     public class MonoBehaviourStyle : MonoBehaviour
     {
         #region Configuration
         [Header("Settings")]
-        // RULE: No public fields. Use [SerializeField] private.
         [SerializeField] private float _moveSpeed = 5f;
         #endregion
 
         #region References
         [Header("Dependencies")]
-        // RULE: Explicit dependencies.
-        [SerializeField] private Rigidbody _rb;
+        [SerializeField] private Rigidbody _rigidbody;
         #endregion
 
         #region Runtime State
-        // RULE: Private state variables underscore _camelCase.
         private bool _isInitialized;
-        public float MoveSpeed => _moveSpeed; // Public Access via Property
+        public float MoveSpeed => _moveSpeed;
         #endregion
 
         #region Unity Lifecycle
         private void Awake()
         {
-            // RULE: Cache components in Awake. Use TryGetComponent for safety.
-            if (_rb == null && !TryGetComponent(out _rb))
+            if (_rigidbody == null && !TryGetComponent(out _rigidbody))
             {
-                Debug.LogError($"[TSC-FATAL] Missing RB on {name}");
+                Debug.LogError($"[TSC-FATAL] Missing Rigidbody on {name}");
                 enabled = false;
                 return;
             }
+
             _isInitialized = true;
         }
 
         private void Update()
         {
-            if (!_isInitialized) return;
-            // RULE: No Allocations (new) in Update.
-            // RULE: No GetComponent in Update.
+            if (!_isInitialized)
+            {
+                return;
+            }
         }
         #endregion
 
         #region Internal Logic
-        // RULE: Use Awaitable (Unity 6) instead of Coroutine.
         private async Awaitable CooldownAsync()
         {
             await Awaitable.WaitForSecondsAsync(1f);

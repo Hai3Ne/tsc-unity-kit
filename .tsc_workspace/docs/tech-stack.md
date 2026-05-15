@@ -2,7 +2,7 @@
 
 ## Core Engine
 - **Unity Version:** Unity 6 (LTS)
-- **Scripting Backend:** IL2CPP (Release), Mono (Editor)
+- **Scripting Backend:** IL2CPP (Release) only
 - **API Compatibility:** .NET Standard 2.1
 
 ## Programming (C#)
